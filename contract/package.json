@@ -1,0 +1,37 @@
+{
+  "name": "contract",
+  "version": "1.0.0",
+  "description": "Hardhat smart contract environment",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "deploy:random:local": "hardhat run scripts/deployRandom.ts --network localhost",
+    "deploy:random:sepolia": "hardhat run scripts/deployRandom.ts --network sepolia",
+    "deploy:reserved:local": "hardhat run scripts/deployReserved.ts --network localhost",
+    "deploy:reserved:sepolia": "hardhat run scripts/deployReserved.ts --network sepolia",
+    "deploy:random:paid:local": "hardhat run scripts/deployRandomPaid.ts --network localhost",
+    "deploy:random:paid:sepolia": "hardhat run scripts/deployRandomPaid.ts --network sepolia",
+    "deploy:reserved:paid:local": "hardhat run scripts/deployReservedPaid.ts --network localhost",
+    "deploy:reserved:paid:sepolia": "hardhat run scripts/deployReservedPaid.ts --network sepolia",
+    "verify:inputs": "hardhat run scripts/genVerifyInputs.ts",
+    "web:contracts": "hardhat run scripts/genWebContracts.ts",
+    "web:sync": "npm run web:contracts && npm run verify:inputs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.10.0",
+    "hardhat": "^2.22.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.6",
+    "dotenv": "^16.4.5"
+  }
+}

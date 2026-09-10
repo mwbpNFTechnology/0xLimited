@@ -1,0 +1,13 @@
+{
+  "attributes": [
+    { "trait_type": "Serial", "value": "003/025" },
+    { "trait_type": "Colourway", "value": "Rust — one-off dye" },
+    { "trait_type": "Size", "value": "L" },
+    { "trait_type": "Signed by", "value": "Joe Hahn" },
+    { "trait_type": "Signature placement", "value": "Front left chest" },
+    { "trait_type": "Condition", "value": "Prototype" },
+    { "trait_type": "Release", "value": "Tour 2026" },
+    { "trait_type": "Prints made", "value": 1, "display_type": "number" },
+    { "trait_type": "Notes", "value": "Sample piece — \"artist proof\" tag still attached" }
+  ]
+}
